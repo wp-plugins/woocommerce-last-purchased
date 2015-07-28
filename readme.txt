@@ -17,26 +17,6 @@ This little WooCommerce plugin shows last purchased date on single product page.
 
 From my experience, showing last purchased date can increase conversion rate. This trick is using by Allegro ([www.allegro.pl](http://allegro.pl)), biggest auction and sales website in Poland.
 
-== Installation ==
-
-= From WordPress dashboard =
-
-1. Log in to you WordPress dashboard.
-2. Navigate to plugins page and to "Add new" next.
-3. Type "WooCommerce Last Purchased" in search field.
-4. Install and activate plugin.
-
-= Manually place plugin files in your plugins directory =
-
-1. Download and unzip plugin files.
-2. Copy plugin folder (`woocommerce-last-purchased`) to your Wordpress installation plugins directory (`/wp-content/plugins/`).
-3. Go to you WordPress panel, to plugins page.
-4. Activate plugin.
-
-Install plugin from your WordPress dashboard
-
-== Usage ==
-
 = Basic usage =
 
 Just install plugin and you are ready to go.
@@ -161,3 +141,21 @@ This plugin is released under GPLv2 license. This plugins is free to use both in
 == Special thanks ==
 
 Special thanks to [Ryan McGeary](https://github.com/rmm5t) ([http://ryan.mcgeary.org](http://ryan.mcgeary.org)), author of [timeago.js](https://github.com/rmm5t/jquery-timeago), jQuery plugin used in this little project.
+
+== Installation ==
+
+= From WordPress dashboard =
+
+1. Log in to you WordPress dashboard.
+2. Navigate to plugins page and to "Add new" next.
+3. Type "WooCommerce Last Purchased" in search field.
+4. Install and activate plugin.
+
+= Manually place plugin files in your plugins directory =
+
+1. Download and unzip plugin files.
+2. Copy plugin folder (`woocommerce-last-purchased`) to your Wordpress installation plugins directory (`/wp-content/plugins/`).
+3. Go to you WordPress panel, to plugins page.
+4. Activate plugin.
+
+Install plugin from your WordPress dashboard
