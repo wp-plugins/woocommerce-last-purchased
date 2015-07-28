@@ -4,7 +4,7 @@
  * Plugin URI: http://wordpress.org/plugins/woocommerce-last-purchased/
  * Description: This is a WooCommerce extension to show last purchased date popup on product page.
  * Author: Dawid Urbański
- * Version: 1.0
+ * Version: 1.0.1
  * Author URI: http://dawidurbanski.com/
  *
  * Text Domain: wlp
@@ -51,7 +51,7 @@ if ( ! class_exists( 'Woocommerce_Last_Purchased' ) ) :
 			add_action( 'init', array( $this, 'init' ), 0 );
 			add_action( 'plugins_loaded', array( $this, 'load_textdomain' ));
 			add_action( 'wp_footer', array( $this, 'add_post_meta' ) );
-			if( get_option( 'show_wlp_popup' ) == '1' ){
+			if( $this->hide_popup == false ){
 				add_action( 'wp_footer', array( $this, 'show_popup' ));
 				add_action( 'wp_enqueue_scripts', array( $this, 'load_styles' ));
 				add_action( 'wp_enqueue_scripts', array( $this, 'load_scripts' ));
@@ -97,6 +97,8 @@ if ( ! class_exists( 'Woocommerce_Last_Purchased' ) ) :
 
 			wp_register_script( 'timeago', plugin_dir_url( __FILE__ ) . 'vendor/timeago/jquery.timeago.js', array( 'jquery' ), false, true );
 			wp_enqueue_script( 'scripts', plugin_dir_url( __FILE__ ) . 'assets/js/scripts.js', array( 'timeago' ), false, true );
+
+			echo get_option( 'show_wlp_popup' );
 
 			if ( file_exists( $this->_timeago_locale_file ) ){
 				wp_enqueue_script( 'timeago_locale', $this->_timeago_locale_file_url, array( 'timeago' ), false, true );

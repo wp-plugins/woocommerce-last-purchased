@@ -3,7 +3,7 @@ Contributors: (DawidUrbanski)
 Tags: woocommerce
 Requires at least: 4.2
 Tested up to: 4.2.2
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,6 +114,11 @@ You can override popup styles. Just place your rules in your theme `style.css` f
     display:none;
 
 }`
+
+= Version history =
+
+1.0.1 - Popup not appearing bug fixed
+1.0 - Initial version
 
 == Translations ==
 
